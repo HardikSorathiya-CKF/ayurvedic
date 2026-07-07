@@ -452,3 +452,155 @@ img.hero-bottom-image {
 .hero .slick-arrow::before {
   display: none;
 }
+
+/* Category */
+.home-category {
+  padding: 3.25rem 0;
+}
+
+.category-item-wrap {
+  padding: 0 0.6rem;
+}
+
+.category-item {
+  margin: 0;
+}
+
+.category-image {
+  width: 190px;
+  height: 220px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.category-image-inner {
+  width: 100%;
+  height: 100%;
+  border-radius: 110px;
+  overflow: hidden;
+  position: relative;
+}
+
+.category-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.75s ease;
+}
+
+.category-overlay {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  color: var(--white);
+  font-size: 0.95rem;
+  font-weight: 500;
+  opacity: 0;
+  transition: opacity 0.6s ease;
+  overflow: hidden;
+  border-radius: inherit;
+}
+
+.category-overlay::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: rgba(0, 128, 128, 0.72);
+  transform: translate(-50%, -50%) scale(0);
+  transform-origin: center;
+  transition: transform 0.8s ease;
+}
+
+.category-overlay span {
+  position: relative;
+  z-index: 1;
+  transform: translateY(8px);
+  transition: transform 0.6s ease;
+}
+
+.category-item:hover .category-image img {
+  transform: scale(1.08);
+}
+
+.category-item:hover .category-overlay {
+  opacity: 1;
+}
+
+.category-item:hover .category-overlay::before {
+  transform: translate(-50%, -50%) scale(14);
+}
+
+.category-item:hover .category-overlay span {
+  transform: translateY(0);
+}
+
+.category-title {
+  margin-top: 1rem;
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #333;
+  line-height: 1.35;
+}
+
+.category-badge {
+  position: absolute;
+  top: 0.15rem;
+  right: -0.15rem;
+  z-index: 3;
+  width: 54px;
+  height: 54px;
+  display: grid;
+  place-items: center;
+  background: var(--primary);
+  color: var(--white);
+  font-size: 0.58rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  line-height: 1;
+  transform: rotate(-18deg);
+  clip-path: polygon(
+    50% 0%,
+    56% 8%,
+    64% 3%,
+    68% 12%,
+    78% 10%,
+    80% 20%,
+    90% 22%,
+    88% 32%,
+    97% 40%,
+    90% 48%,
+    97% 58%,
+    88% 62%,
+    90% 72%,
+    80% 74%,
+    78% 84%,
+    68% 82%,
+    64% 91%,
+    56% 86%,
+    50% 94%,
+    44% 86%,
+    36% 91%,
+    32% 82%,
+    22% 84%,
+    20% 74%,
+    10% 72%,
+    12% 62%,
+    3% 58%,
+    10% 48%,
+    3% 40%,
+    12% 32%,
+    10% 22%,
+    20% 20%,
+    22% 10%,
+    32% 12%,
+    36% 3%,
+    44% 8%
+  );
+  pointer-events: none;
+}
