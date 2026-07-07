@@ -90,7 +90,7 @@
   .category-badge {
     width: 48px;
     height: 48px;
-    font-size: 0.52rem;
+    font-size: 0.58rem;
   }
 
   .category-title {
@@ -149,7 +149,7 @@
   .category-badge {
     width: 42px;
     height: 42px;
-    font-size: 0.48rem;
+    font-size: 0.54rem;
     top: 0.1rem;
     right: -0.1rem;
   }
@@ -158,6 +158,79 @@
     font-size: 0.85rem;
     margin-top: 0.75rem;
     line-height: 1.3;
+  }
+
+  .feature-icon {
+    font-size: 2.1rem;
+  }
+
+  .feature-title {
+    font-size: 1rem;
+  }
+
+  .product-card-image {
+    min-height: 130px;
+    margin: 0.5rem 0.5rem 0;
+    padding: 0.65rem;
+    border-radius: 12px;
+  }
+
+  .product-card-image img {
+    max-height: 110px;
+  }
+
+  .product-badge {
+    top: 0.2rem;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    font-size: 0.48rem;
+  }
+
+  .product-badge--off {
+    width: 44px;
+    height: 44px;
+    font-size: 0.44rem;
+  }
+
+  .product-wishlist {
+    top: 0.35rem;
+    right: 0.35rem;
+    font-size: 0.9rem;
+  }
+
+  .product-card-body {
+    padding: 0.65rem 0.5rem 0.75rem;
+  }
+
+  .product-name {
+    font-size: 0.8rem;
+    margin-bottom: 0.45rem;
+  }
+
+  .product-meta {
+    flex-direction: column;
+    align-items: flex-start !important;
+    gap: 0.25rem;
+    margin-bottom: 0.65rem;
+  }
+
+  .old-price {
+    font-size: 0.72rem;
+  }
+
+  .current-price {
+    font-size: 0.85rem;
+  }
+
+  .product-rating {
+    font-size: 0.72rem;
+  }
+
+  .product-cart-btn {
+    padding: 0.5rem 0.4rem;
+    font-size: 0.72rem;
+    gap: 0.3rem;
   }
 
 }
