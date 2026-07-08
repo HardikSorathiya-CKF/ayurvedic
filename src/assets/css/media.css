@@ -350,6 +350,28 @@
     padding: 1.5rem;
   }
 
+  .shop-grid--list .product-card {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .shop-grid--list .product-card-image {
+    width: auto;
+  }
+
+  .pd-review-item {
+    flex-wrap: wrap;
+    gap: 0.85rem;
+  }
+
+  .pd-review-stars {
+    width: 100%;
+  }
+
+  .pd-review-form {
+    padding: 1.5rem;
+  }
+
 }
 
 @media (prefers-reduced-motion: reduce) {
