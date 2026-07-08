@@ -5,6 +5,6 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   optimizeDeps: {
-    include: ['react-slick', 'slick-carousel'],
+    include: ['react-slick', 'slick-carousel', 'react-countup'],
   },
 })

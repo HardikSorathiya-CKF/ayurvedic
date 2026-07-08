@@ -27,7 +27,7 @@ const slides = [
     },
     {
         title: "Shop The Finest",
-        highlight: "Ayurveda Care",
+        highlight: "Aushadhi Care",
         text: "Natural ingredients, trusted quality, and products made for every home.",
         image: ImgHero3,
     },

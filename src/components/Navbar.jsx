@@ -47,7 +47,7 @@ export default function Navbar() {
           <Link className="navbar-brand d-flex align-items-center" to="/">
             <GiMortar size={28} />
             <span className="brand-text">
-              Ayurveda
+              Aushadhi
             </span>
           </Link>
 
